@@ -1,0 +1,20 @@
+[package]
+name = "aviation_calclators"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "dc"
+path = "src/descent_calclator.rs"
+
+[[bin]]
+name = "dl"
+path = "src/late_calclator.rs"
+
+[[bin]]
+name = "a"
+path = "src/altimeter_calclator.rs"
