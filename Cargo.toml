@@ -6,6 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+reqwest = { version = "0.10", features = ["blocking"] }
 
 [[bin]]
 name = "dc"
@@ -18,3 +19,7 @@ path = "src/late_calclator.rs"
 [[bin]]
 name = "a"
 path = "src/altimeter_calclator.rs"
+
+[[bin]]
+name = "metar"
+path = "src/metar.rs"
