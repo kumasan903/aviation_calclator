@@ -1,8 +1,6 @@
-use std::env;
-
 fn main()
 {
-	let argv: Vec<String> = env::args().collect();
+	let argv: Vec<String> = std::env::args().collect();
 	if argv.len() < 3 {
 		println!("usage: dc [current_altitude] [target_altitude]");
 		return

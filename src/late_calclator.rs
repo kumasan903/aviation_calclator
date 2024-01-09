@@ -1,7 +1,5 @@
-use std::env;
-
 fn main() {
-	let argv: Vec<String> = env::args().collect();
+	let argv: Vec<String> = std::env::args().collect();
 	if argv.len() < 2 {
 		println!("usage: dl [ground_speed]");
 		return
